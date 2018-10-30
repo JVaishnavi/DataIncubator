@@ -1,4 +1,5 @@
 
+
 #Install all necessary packages - TTR, neuralnet and ggplot2
 
 library(TTR)

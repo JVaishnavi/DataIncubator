@@ -4,7 +4,7 @@ output: pdf_document
 ---
 ### Problem statement:
 
-The problem statement which I chose to solve was to predict the price of S&P 500. As we know, predicting the stock market prices is the major challenge for every investment banking company. Solving this problem will give us an insight about the influence of past prices to predict the future data.
+The problem statement which I chose to solve was to predict the price of NASDAQ Index. As we know, predicting the stock market prices is the major challenge for every investment banking company. Solving this problem will give us an insight about the influence of past prices to predict the future data.
 I have created a model by applying Artificial Neural Metworks (ANN) on the moving Average of the data to solve this problem
 
 ### ANN  
@@ -39,16 +39,18 @@ library(plyr)
 #Downloading and reading the data.
 ```{r}
 
-data <- read.csv("data_SP.csv")
+data <- read.csv("data_download.csv")
 
 ```
 
 Data can also be downloaded from the web using
 now <- Sys.Date()
 
+
 d=month(now)  
 e=day(now)  
 f=year(now)  
+
 
 p2 <- 1525113000 + as.integer(as.Date(paste(e,d,f,sep = "-"),"%d-%m-%Y") - as.Date("01-05-2018","%d-%m-%Y"))
 
